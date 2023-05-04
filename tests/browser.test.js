@@ -45,6 +45,6 @@ describe('peek bör vara 1 efter en push"', () => {
     let peek = await driver.findElement(By.id("peek"));
     await peek.click();
     let stack = await driver.findElement(By.id("top_of_stack")).getText();
-    expect(stack).toEqual("2");
+    expect(stack).toEqual("1");
   });
 });
